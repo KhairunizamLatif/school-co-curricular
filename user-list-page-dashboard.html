@@ -105,24 +105,24 @@
                                 <td>Raj</td>
                                 <td>John Doe</td>
                                 <td align="center">
-                                    <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                                    <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                                    <a class="btn btn-default" data-toggle="modal" data-target="#myEdit"><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#myDelete"><em class="fa fa-trash"></em></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Mohan</td>
                                 <td>viraj</td>
                                 <td align="center">
-                                    <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                                    <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                                    <a class="btn btn-default" data-toggle="modal" data-target="#myEdit"><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#myDelete"><em class="fa fa-trash"></em></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>koli</td>
                                 <td>Parmar</td>
                                 <td align="center">
-                                    <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                                    <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                                    <a class="btn btn-default" data-toggle="modal" data-target="#myEdit"><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#myDelete"><em class="fa fa-trash"></em></a>
                                 </td>
                             </tr>
                             </tbody>
@@ -208,22 +208,6 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-3 field-label-responsive">
-                                                    <label for="password">Confirm Password</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                                            <div class="input-group-addon" style="width: 2.6rem">
-                                                                <i class="fa fa-repeat"></i>
-                                                            </div>
-                                                            <input type="password" name="password-confirmation" class="form-control"
-                                                                   id="password-confirm" placeholder="Password" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
                                                 <div class="col-md-3"></div>
                                                 <div class="col-md-6">
                                                     <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
@@ -238,6 +222,125 @@
 
                         </div>
                     </div>
+                    <!-- Modal -->
+
+                    <!-- Modal-edit -->
+                    <div class="modal fade" id="myEdit" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Header</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-horizontal" role="form" method="POST" action="/register">
+                                        <div class="row">
+                                            <div class="col-md-3"></div>
+                                            <div class="col-md-6">
+                                                <h2>Register New User</h2>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 field-label-responsive">
+                                                <label for="name">Name</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                                                        <input type="text" name="edit-name" class="form-control" id="edit-name"
+                                                               placeholder="John Doe" required autofocus>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-control-feedback">
+                        <span class="text-danger align-middle">
+                            <!-- Put name validation error messages here -->
+                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 field-label-responsive">
+                                                <label for="name">Class</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-graduation-cap"></i></div>
+                                                        <input type="text" name="edit-class" class="form-control" id="edit-class"
+                                                               placeholder="Class" required autofocus>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-control-feedback">
+                        <span class="text-danger align-middle">
+                            <!-- Put name validation error messages here -->
+                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 field-label-responsive">
+                                                <label for="password">Password</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group has-danger">
+                                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                                                        <input type="password" name="edit-password" class="form-control" id="edit-password"
+                                                               placeholder="Password" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-control-feedback">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3"></div>
+                                            <div class="col-md-6">
+                                                <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Modal-edit -->
+
+                    <!-- Modal-delete -->
+                    <div class="modal fade" id="myDelete" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Delete</h4>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Modal-delete -->
                         <div class="panel-footer">
                             <div class="row">
                                 <div class="col col-xs-4">Page 1 of 5
