@@ -25,7 +25,7 @@ if($dbconn !== FALSE){
         $_SESSION['keyword']=$row[5];
         if($row[1]==1)
         {
-            header("Location:#");
+            header("Location:index-log.html");
         }
         if($row[1]==2)
         {
