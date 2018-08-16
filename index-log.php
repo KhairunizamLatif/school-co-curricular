@@ -1,16 +1,18 @@
 <?php
 session_start();
-if(!isset($_SESSION['id']))
+if(!isset($_SESSION['username']))
 {
-    $_SESSION['id']=$_POST['id'];
+    $_SESSION['username']=$_POST['username'];
 }
-$id=$_SESSION['id'];
+$username=$_SESSION['username'];
 ?>
 <?php
 include"db.php";
 if($dbconn !== FALSE){
     $username=$_POST['username'];
+    echo $username;
     $password=$_POST['password'];
+    echo $password;
     $sel="SELECT * from user where username='$username' and password='$password' ";
     $q=mysql_query($sel,$dbconn);
     $bilRow=mysql_num_rows($q);
@@ -27,25 +29,25 @@ if($dbconn !== FALSE){
         $_SESSION['status']=$row[7];
         if($row[7]=='admin')
         {
-            header("Location:index-log.html");
+            header("Location:dashboard.html");
         }
         if($row[7]=='teacher')
         {
-            header("Location:#");
+            header("Location:dashboard.html");
         }
-        if($row[7]==manager)
+        if($row[7]=='manager')
         {
-            header("Location:#");
+            header("Location:dashboard.html");
         }
     }
 
     else
     {
-        $_SESSION['id']=$id;
+        $_SESSION['username']=$username;
         echo "<script type='text/javascript'>";
         echo "alert('Wrong Username & Password.')";
         echo "</script>";
-        echo "<meta http-equiv='refresh' content='0;URL=insert_code.php'>";
+        echo "<meta http-equiv='refresh' content='0;URL=index-log.html'>";
     }
 }
 

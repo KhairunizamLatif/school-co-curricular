@@ -1,6 +1,6 @@
 <?php
 $server = "localhost";
-$user = "admin";
+$user = "root";
 $pwd = "admin123";
 $db_name = "school";
 ?>
