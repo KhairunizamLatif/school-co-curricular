@@ -222,20 +222,21 @@ body
     color: #5d5d5d;
 }
 
-h3::after
-{
-    content: '';
-    border-bottom: 1px solid #ddd;
-    width: 50%;
-    margin-top: 10px;
-    height: 1px;
-    display: block;
-}
-h3
-{
-    position: relative;
-    font-size: 13pt ;
-}
+/*h3::after*/
+/*{*/
+    /*content: '';*/
+    /*border-bottom: 1px solid #ddd;*/
+    /*width: 50%;*/
+    /*margin-top: 10px;*/
+    /*height: 1px;*/
+    /*display: block;*/
+/*}*/
+/*h3*/
+/*{*/
+    /*position: relative;*/
+    /*font-size: 13pt ;*/
+/*}*/
+
 .Switch-box input[type="checkbox"]:checked + label:after
 {
     left: 32px;
