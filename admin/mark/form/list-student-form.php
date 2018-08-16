@@ -53,11 +53,11 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="list-group">
-                    <a href="../../../dashboard.html" class="list-group-item active main-color-bg"><em class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
-                    <a href="../../class/classes-list-page.html" class="list-group-item"><em class="fa fa-files-o"></em> Class<span class="badge">25</span></a>
+                    <a href="../../../dashboard.php" class="list-group-item active main-color-bg"><em class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
+                    <a href="../../class/classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em> Class<span class="badge">25</span></a>
                     <a href="#" class="list-group-item"><em class="fa fa-plus"></em> Posts<span class="badge">126</span></a>
                     <a href="#" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">12</span></a>
-                    <a href="../../user/user-list-page-dashboard.html" class="list-group-item"><em class="fa fa-users"></em> Users <span class="badge">12</span></a>
+                    <a href="../../user/user-list-page-dashboard.php" class="list-group-item"><em class="fa fa-users"></em> Users <span class="badge">12</span></a>
                 </div>
 
                 <div class="well">
@@ -106,9 +106,9 @@
                                 <td>Raj</td>
                                 <td>John Doe</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="form-uniformed-unit.html"><i class="fas fa-user-astronaut"></i> Uniform</a>
-                                    <a class="btn btn-default" href="form-Sport.html"><i class="fas fa-bicycle"></i> Club</a>
-                                    <a class="btn btn-default" href="form-club.html"><i class="fas fa-futbol"></i> Sport</a>
+                                    <a class="btn btn-default" href="form-uniformed-unit.php"><i class="fas fa-user-astronaut"></i> Uniform</a>
+                                    <a class="btn btn-default" href="form-Sport.php"><i class="fas fa-bicycle"></i> Club</a>
+                                    <a class="btn btn-default" href="form-club.php"><i class="fas fa-futbol"></i> Sport</a>
                                 </td>
                                 <td align="center">
                                     <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
@@ -119,9 +119,9 @@
                                 <td>Mohan</td>
                                 <td>viraj</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="form-uniformed-unit.html"><i class="fas fa-user-astronaut"></i> Uniform</a>
-                                    <a class="btn btn-default" href="form-Sport.html"><i class="fas fa-bicycle"></i> Club</a>
-                                    <a class="btn btn-default" href="form-club.html"><i class="fas fa-futbol"></i> Sport</a>
+                                    <a class="btn btn-default" href="form-uniformed-unit.php"><i class="fas fa-user-astronaut"></i> Uniform</a>
+                                    <a class="btn btn-default" href="form-Sport.php"><i class="fas fa-bicycle"></i> Club</a>
+                                    <a class="btn btn-default" href="form-club.php"><i class="fas fa-futbol"></i> Sport</a>
                                 </td>
                                 <td align="center">
                                     <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
@@ -132,9 +132,9 @@
                                 <td>koli</td>
                                 <td>Parmar</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="form-uniformed-unit.html"><i class="fas fa-user-astronaut"></i> Uniform</a>
-                                    <a class="btn btn-default" href="form-Sport.html"><i class="fas fa-bicycle"></i> Club</a>
-                                    <a class="btn btn-default" href="form-club.html"><i class="fas fa-futbol"></i> Sport</a>
+                                    <a class="btn btn-default" href="form-uniformed-unit.php"><i class="fas fa-user-astronaut"></i> Uniform</a>
+                                    <a class="btn btn-default" href="form-Sport.php"><i class="fas fa-bicycle"></i> Club</a>
+                                    <a class="btn btn-default" href="form-club.php"><i class="fas fa-futbol"></i> Sport</a>
                                 </td>
                                 <td align="center">
                                     <a class="btn btn-default"><em class="fa fa-pencil"></em></a>

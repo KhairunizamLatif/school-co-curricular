@@ -56,15 +56,15 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="list-group">
-                    <a href="../../dashboard.html" class="list-group-item active main-color-bg"><em
+                    <a href="../../dashboard.php" class="list-group-item active main-color-bg"><em
                             class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
-                    <a href="classes-list-page.html" class="list-group-item"><em class="fa fa-files-o"></em> Class<span
+                    <a href="classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em> Class<span
                             class="badge">25</span></a>
                     <a href="posts.html" class="list-group-item"><em class="fa fa-plus"></em> Posts<span class="badge">126</span></a>
-                    <a href="../user/user-list-page-dashboard.html" class="list-group-item"><span
+                    <a href="../user/user-list-page-dashboard.php" class="list-group-item"><span
                             class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span
                             class="badge">12</span></a>
-                    <a href="../user/user-list-page-dashboard.html" class="list-group-item"><em class="fa fa-users"></em> Users
+                    <a href="../user/user-list-page-dashboard.php" class="list-group-item"><em class="fa fa-users"></em> Users
                         <span class="badge">12</span></a>
                 </div>
 
@@ -107,14 +107,14 @@
                                 <td>1</td>
                                 <td>Level 1</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.html" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Level 2</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.html" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
 
                                 </td>
                             </tr>
@@ -122,20 +122,20 @@
                                 <td>3</td>
                                 <td>Level 3</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.html" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td>Level 4</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.html" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
                                 </td>
                             </tr><tr>
                                 <td>5</td>
                                 <td>Level 5</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.html" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
                                 </td>
                             </tr>
                             </tbody>

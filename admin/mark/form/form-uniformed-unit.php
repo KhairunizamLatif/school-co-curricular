@@ -54,16 +54,16 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="list-group">
-                    <a href="../../../dashboard.html" class="list-group-item active main-color-bg"><em
+                    <a href="../../../dashboard.php" class="list-group-item active main-color-bg"><em
                             class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
-                    <a href="../../class/classes-list-page.html" class="list-group-item"><em class="fa fa-files-o"></em> Class<span
+                    <a href="../../class/classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em> Class<span
                             class="badge">25</span></a>
-                    <a href="../../student/list-student-name-page.html" class="list-group-item"><em class="fa fa-plus"></em> Student<span class="badge">126</span></a>
+                    <a href="../../student/list-student-name-page.php" class="list-group-item"><em class="fa fa-plus"></em> Student<span class="badge">126</span></a>
 
-                    <a href="../../user/user-list-page-dashboard.html" class="list-group-item"><span
+                    <a href="../../user/user-list-page-dashboard.php" class="list-group-item"><span
                             class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span
                             class="badge">12</span></a>
-                    <a href="../../user/user-list-page-dashboard.html" class="list-group-item"><em class="fa fa-users"></em> Users
+                    <a href="../../user/user-list-page-dashboard.php" class="list-group-item"><em class="fa fa-users"></em> Users
                         <span class="badge">12</span></a>
                 </div>
 

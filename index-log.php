@@ -29,15 +29,15 @@ if($dbconn !== FALSE){
         $_SESSION['status']=$row[7];
         if($row[7]=='admin')
         {
-            header("Location:dashboard.html");
+            header("Location:dashboard.php");
         }
         if($row[7]=='teacher')
         {
-            header("Location:dashboard.html");
+            header("Location:dashboard.php");
         }
         if($row[7]=='manager')
         {
-            header("Location:dashboard.html");
+            header("Location:dashboard.php");
         }
     }
 
