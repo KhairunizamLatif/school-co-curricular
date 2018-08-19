@@ -56,7 +56,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="list-group">
-                    <a href="../../dashboard.php" class="list-group-item active main-color-bg"><em
+                    <a href="../dashboard/dashboard.php" class="list-group-item active main-color-bg"><em
                             class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
                     <a href="classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em> Class<span
                             class="badge">25</span></a>
@@ -107,14 +107,14 @@
                                 <td>1</td>
                                 <td>Level 1</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/list-student-form.php" ><em class="fa fa-pencil"></em></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Level 2</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/list-student-form.php" ><em class="fa fa-pencil"></em></a>
 
                                 </td>
                             </tr>
@@ -122,20 +122,20 @@
                                 <td>3</td>
                                 <td>Level 3</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/list-student-form.php" ><em class="fa fa-pencil"></em></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td>Level 4</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/list-student-form.php" ><em class="fa fa-pencil"></em></a>
                                 </td>
                             </tr><tr>
                                 <td>5</td>
                                 <td>Level 5</td>
                                 <td align="center">
-                                    <a class="btn btn-default" href="../mark/form/list-student-form.php" ><em class="fa fa-pencil"></em></a>
+                                    <a class="btn btn-default" href="../mark/list-student-form.php" ><em class="fa fa-pencil"></em></a>
                                 </td>
                             </tr>
                             </tbody>

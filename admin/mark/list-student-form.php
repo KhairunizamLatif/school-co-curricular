@@ -56,7 +56,7 @@
                 <div class="list-group">
                     <a href="../dashboard/dashboard.php" class="list-group-item active main-color-bg"><em class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
                     <a href="../class/classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em> Class<span class="badge">25</span></a>
-                    <a href="../student/list-student-name-page.php" class="list-group-item"><em class="fa fa-plus"></em> Student<span class="badge">126</span></a>
+                    <a href="list-student-name-page.php" class="list-group-item"><em class="fa fa-plus"></em> Student<span class="badge">126</span></a>
                     <a href="../user/user-list-page-dashboard.php" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">12</span></a>
                     <a href="../user/user-list-page-dashboard.php" class="list-group-item"><em class="fa fa-users"></em> Users <span class="badge">12</span></a>
                 </div>
@@ -80,7 +80,7 @@
             <div class="col-md-9">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color:  #333333;">
-                        <h3 class="panel-title">List Of Users</h3>
+                        <h3 class="panel-title">List Of Students</h3>
                     </div>
                     <div class="panel-heading">
                         <div class="row">
@@ -184,7 +184,7 @@
                                                 <input class="form-control" placeholder="Status" name="status" id="status" type="text">
                                             </div>
                                         </div>
-                                        <button type="submit" name="submit" id="button" class="btn btn-primary">Create an account</button>
+                                            <button type="submit" name="submit" id="button" class="btn btn-primary">Create an account</button>
                                     </form>
 
                                 </div>

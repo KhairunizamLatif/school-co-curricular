@@ -55,7 +55,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="list-group">
-                    <a href="../../../dashboard.php" class="list-group-item active main-color-bg"><em
+                    <a href="../../dashboard/dashboard.php" class="list-group-item active main-color-bg"><em
                             class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
                     <a href="../../class/classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em> Class<span
                             class="badge">25</span></a>

@@ -53,7 +53,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="list-group">
-                    <a href="../../dashboard.php" class="list-group-item active main-color-bg"><em class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
+                    <a href="../dashboard/dashboard.php" class="list-group-item active main-color-bg"><em class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
                     <a href="../class/classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em> Class<span class="badge">25</span></a>
                     <a href="list-student-name-page.php" class="list-group-item"><em class="fa fa-plus"></em> Student<span class="badge">126</span></a>
                     <a href="../user/user-list-page-dashboard.php" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">12</span></a>
@@ -79,7 +79,7 @@
             <div class="col-md-9">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color:  #333333;">
-                        <h3 class="panel-title">Latest Users</h3>
+                        <h3 class="panel-title">List Of Students</h3>
                     </div>
                     <div class="panel-heading">
                         <div class="row">
@@ -95,36 +95,15 @@
                         <table class="table table-striped table-bordered table-list">
                             <thead>
                             <tr>
-                                <th>Firstname</th>
-                                <th>Lastname</th>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>IC</th>
+                                <th>Class</th>
                                 <th><em class="fa fa-cog"></em></th>
                             </tr>
                             </thead>
                             <tbody id="myTable">
-                            <tr>
-                                <td>Raj</td>
-                                <td>John Doe</td>
-                                <td align="center">
-                                    <a class="btn btn-default" data-toggle="modal" data-target="#myEdit"><em class="fa fa-pencil"></em></a>
-                                    <a class="btn btn-danger" data-toggle="modal" data-target="#myDelete"><em class="fa fa-trash"></em></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Mohan</td>
-                                <td>viraj</td>
-                                <td align="center">
-                                    <a class="btn btn-default" data-toggle="modal" data-target="#myEdit"><em class="fa fa-pencil"></em></a>
-                                    <a class="btn btn-danger" data-toggle="modal" data-target="#myDelete"><em class="fa fa-trash"></em></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>koli</td>
-                                <td>Parmar</td>
-                                <td align="center">
-                                    <a class="btn btn-default" data-toggle="modal" data-target="#myEdit"><em class="fa fa-pencil"></em></a>
-                                    <a class="btn btn-danger" data-toggle="modal" data-target="#myDelete"><em class="fa fa-trash"></em></a>
-                                </td>
-                            </tr>
+                            <?Php include 'table_std.php'?>
                             </tbody>
                         </table>
                     </div>

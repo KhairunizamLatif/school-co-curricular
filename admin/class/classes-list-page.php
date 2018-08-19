@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="../../css/dashboard.css">
 <link rel="stylesheet" href="../../css/table.css">
 <script src="../../js/dashboard.js"></script>
+<script src="table_ajax_classes.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
@@ -42,7 +43,7 @@
 <section id="breadcrumb">
     <div class="container">
         <ol class="breadcrumb">
-            <li class="active">Dashboard</li>
+            <li class="active">Dashboard Admin</li>
         </ol>
     </div>
 </section>
@@ -53,8 +54,8 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="list-group">
-                    <a href="../../dashboard.php" class="list-group-item active main-color-bg"><em class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
-                    <a href="classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em> Class<span class="badge">25</span></a>
+                    <a href="../dashboard/dashboard.php" class="list-group-item active main-color-bg"><em class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
+                    <a href="../class/classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em> Class<span class="badge">25</span></a>
                     <a href="../student/list-student-name-page.php" class="list-group-item"><em class="fa fa-plus"></em> Student<span class="badge">126</span></a>
                     <a href="../user/user-list-page-dashboard.php" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge">12</span></a>
                     <a href="../user/user-list-page-dashboard.php" class="list-group-item"><em class="fa fa-users"></em> Users <span class="badge">12</span></a>
@@ -79,7 +80,7 @@
             <div class="col-md-9">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color:  #333333;">
-                        <h3 class="panel-title">Class Name</h3>
+                        <h3 class="panel-title">List Of Classes</h3>
                     </div>
                     <div class="panel-heading">
                         <div class="row">
@@ -93,222 +94,10 @@
                     </div>
                     <div class="panel-body">
                         <table class="table table-striped table-bordered table-list">
-                            <thead>
-                            <tr>
-                                <th>Class</th>
-                                <th>Teacher</th>
-                                <th><center><em class="fa fa-filter"></em></center></th>
-                                <th><center><em class="fa fa-cog"></em></center></th>
-                            </tr>
-                            </thead>
                             <tbody id="myTable">
-                            <tr>
-                                <td>A</td>
-                                <td>John Doe</td>
-                                <td align="center">
-                                    <a class="btn btn-default" href="class-detail-page.php"><em class="fa fa-file-text-o"></em></a>
-                                </td>
-                                <td align="center">
-                                    <a class="btn btn-default" data-toggle="modal" data-target="#myEdit"><em class="fa fa-pencil"></em></a>
-                                    <a class="btn btn-danger" data-toggle="modal" data-target="#myDelete"><em class="fa fa-trash"></em></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>B</td>
-                                <td>Raj</td>
-                                <td align="center">
-                                    <a class="btn btn-default" href="class-detail-page.php"><em class="fa fa-file-text-o"></em></a>
-                                </td>
-                                <td align="center">
-                                    <a class="btn btn-default" data-toggle="modal" data-target="#myEdit"><em class="fa fa-pencil"></em></a>
-                                    <a class="btn btn-danger" data-toggle="modal" data-target="#myDelete"><em class="fa fa-trash"></em></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>C</td>
-                                <td>Girish</td>
-                                <td align="center">
-                                    <a class="btn btn-default" href="class-detail-page.php"><em class="fa fa-file-text-o"></em></a>
-                                </td>
-                                <td align="center">
-                                    <a class="btn btn-default" data-toggle="modal" data-target="#myEdit"><em class="fa fa-pencil"></em></a>
-                                    <a class="btn btn-danger" data-toggle="modal" data-target="#myDelete"><em class="fa fa-trash"></em></a>
-                                </td>
-                            </tr>
                             </tbody>
                         </table>
                     </div>
-
-                    <!-- Modal-add-user -->
-                    <div class="modal fade" id="myModal" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Register New User</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <form class="form-horizontal" role="form" method="POST" action="/register">
-                                        <div class="row">
-                                            <div class="col-md-3"></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3 field-label-responsive">
-                                                <label for="class-name">Class Name</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                                                        <input type="text" name="class-name" class="form-control" id="class-name"
-                                                               placeholder="Class Name" required autofocus>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <!-- Put name validation error messages here -->
-                        </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3 field-label-responsive">
-                                                <label for="teacher">Teacher Name</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-graduation-cap"></i></div>
-                                                        <input type="text" name="Class" class="form-control" id="teacher"
-                                                               placeholder="Teacher Name" required autofocus>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <!-- Put name validation error messages here -->
-                        </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3"></div>
-                                            <div class="col-md-6">
-                                                <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Modal-add-user -->
-
-                    <!-- Modal-edit -->
-                    <div class="modal fade" id="myEdit" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Edit</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <form class="form-horizontal" role="form" method="POST" action="/register">
-                                        <div class="row">
-                                            <div class="col-md-3"></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3 field-label-responsive">
-                                                <label for="class-name">Class Name</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                                                        <input type="text" name="edit-name" class="form-control" id="edit-name"
-                                                               placeholder="Class Name" required autofocus>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <!-- Put name validation error messages here -->
-                        </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3 field-label-responsive">
-                                                <label for="teacher">Teacher Name</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-graduation-cap"></i></div>
-                                                        <input type="text" name="edit-name" class="form-control" id="edit-teacher"
-                                                               placeholder="Teacher Name" required autofocus>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <!-- Put name validation error messages here -->
-                        </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3"></div>
-                                            <div class="col-md-6">
-                                                <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Modal-edit -->
-
-                    <!-- Modal-delete -->
-                    <div class="modal fade" id="myDelete" role="dialog">
-                        <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Delete</h4>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Modal-delete -->
-
                     <div class="panel-footer">
                         <div class="row">
                             <div class="col col-xs-4">Page 1 of 5
@@ -328,6 +117,69 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Header</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="myform"  method="POST"  class="form_status">
+                                        <div class="form-group">
+                                            <label class="control-label" for="code">Code</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                                <input class="form-control" placeholder="Code" name="code" id="code" type="type">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="name">Name</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                                <input class="form-control" placeholder="Name" name="name" id="name" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="tch_name">Teacher Name</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                                <input class="form-control" placeholder="Teacher Name" name="tch_name" id="tch_name" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="tch_code">Teacher Code</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                                <input class="form-control" placeholder="Teacher Code" name="tch_code" id="tch_code" type="tch_code">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="date">Date</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                                <input class="form-control" placeholder="Date" name="date" id="date" type="text">
+                                            </div>
+                                        </div>
+                                        <button type="submit" name="submit" id="button" class="btn btn-primary">Create an account</button>
+                                    </form>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button"  class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Modal -->
                 </div>
             </div>
         </div>

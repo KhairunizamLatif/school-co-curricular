@@ -3,8 +3,8 @@
       type='text/css'>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="css/dashboard.css">
-<script src="js/dashboard.js"></script>
+<link rel="stylesheet" href="../../css/dashboard.css">
+<script src="../../js/dashboard.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
@@ -53,16 +53,16 @@
             <div class="col-md-3">
                 <div class="list-group">
                     <a href="dashboard.php" class="list-group-item active main-color-bg"><em
-                            class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
-                    <a href="admin/class/classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em>
+                                class="fa fa-tachometer"></em> Dashboard <span class="badge">12</span></a>
+                    <a href="../class/classes-list-page.php" class="list-group-item"><em class="fa fa-files-o"></em>
                         Class<span class="badge">25</span></a>
-                    <a href="admin/student/list-student-name-page.php" class="list-group-item"><em
-                            class="fa fa-plus"></em> Student<span class="badge">126</span></a>
-                    <a href="admin/user/user-list-page-dashboard.php" class="list-group-item"><span
-                            class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span
-                            class="badge">12</span></a>
-                    <a href="admin/user/user-list-page-dashboard.php" class="list-group-item"><em
-                            class="fa fa-users"></em> Users <span class="badge">12</span></a>
+                    <a href="../student/list-student-name-page.php" class="list-group-item"><em
+                                class="fa fa-plus"></em> Student<span class="badge">126</span></a>
+                    <a href="../user/user-list-page-dashboard.php" class="list-group-item"><span
+                                class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span
+                                class="badge">12</span></a>
+                    <a href="../user/user-list-page-dashboard.php" class="list-group-item"><em
+                                class="fa fa-users"></em> Users <span class="badge">12</span></a>
                 </div>
 
                 <div class="well">
@@ -117,35 +117,19 @@
                 <!--Latest User-->
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-color:  #333333;">
-                        <h3 class="panel-title">List Of Student</h3>
+                        <h3 class="panel-title">List Of User</h3>
                     </div>
                     <div class="panel-body">
                         <table class="table table-striped table-hover">
                             <tr>
+                                <th>#</th>
+                                <th>Code</th>
                                 <th>Name</th>
-                                <th>Email</th>
-                                <th>Joined</th>
+                                <th>Username</th>
+                                <th>Class</th>
+                                <th>Status</th>
                             </tr>
-                            <tr>
-                                <td>Madhav Prasad</td>
-                                <td>mr.madhavprasad@gmail.com</td>
-                                <td>Dec 13,2014</td>
-                            </tr>
-                            <tr>
-                                <td>Nagendra Kushwaha</td>
-                                <td>nkushwaha822@gmail.com</td>
-                                <td>Feb 15,2014</td>
-                            </tr>
-                            <tr>
-                                <td>Arun Kumar</td>
-                                <td>kumarun@yahoo.com</td>
-                                <td>Aug 17, 2015</td>
-                            </tr>
-                            <tr>
-                                <td>Nabin Singh</td>
-                                <td>singhNavs@outlook.com</td>
-                                <td>March 08,2016</td>
-                            </tr>
+                                <?php include 'table_user.php' ?>
                         </table>
 
                     </div>
